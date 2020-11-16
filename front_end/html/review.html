@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bookflix - Review</title>
+    <link rel="icon" href="flavicon.png" type="image/png" sizes="16x16">
+
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="review.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="topbar" class="navbar navbar-expand navbar-dark topbar mb-4 fixed-top shadow">
+            <a href="index.html" class="sidebar-brand d-flex align-items-center justify-content-center">
+                <img class="sidebar-logo" src="bookflix.png" alt="Logo Bookflix">
+            </a>
+            <form class="d-none d-sm-inline-block form-inline mr-auto ml-auto my-2 my-md-0 mw-100 navbar-search">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-dark border-0" placeholder="Search for book, magazine..."
+                        aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark" type="button">
+                            <em class="fa fa-search fa-sm"></em>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown no-arrow d-sm-none show">
+                    <a class="nav-link dropdown" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                        <em class="fa fa-search fa-fw"></em>
+                    </a>
+                    <!-- Dropdown - Messages -->
+                    <div class="dropdown-menu dropdown-menu-right p-3 shadow" aria-labelledby="searchDropdown">
+                        <form class="form-inline mr-auto w-100 navbar-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-dark border-0"
+                                    placeholder="Search for book, magazine ..." aria-label="Search"
+                                    aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-dark" type="button">
+                                        <em class="fa fa-search fa-sm"></em>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <!-- Nav Item - User Information -->
+                <li class="nav-item dropdown no-arrow">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img class="img-profile rounded-circle" src="userImage.jpg" alt="Foto do Usuário">
+                    </a>
+                    <!-- Dropdown - User Information -->
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                        aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">
+                            <em class="fa fa-user fa-sm fa-fw mr-2 text-gray-400"></em>
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <em class="fa fa-cogs fa-sm fa-fw mr-2 text-gray-400"></em>
+                            Settings
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <em class="fa fa-list fa-sm fa-fw mr-2 text-gray-400"></em>
+                            Activity Log
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <em class="fa fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></em>
+                            Logout
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+        </header>
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div class="body-wrapper">
+                <div class="row mb-4" style="height: 5rem;"></div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-3">
+                        <img class="bookimage" src="bookImage1.jpg" alt="Imagem do livro Antifragil">
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12 mt-3 book-details">
+                        <div class="book-details-content mt-3 ml-3">
+                            <h1 class="book-title">Universo dentro de um casca de noz</h1>
+                            <div class="mt-3">
+                                <em class="fa fa-star book-rate-star"></em>
+                                <span>4.7</span><span class="review-star-span">/5</span>
+                            </div>
+                            <p class="review-details mt-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu aliquet enim. Pellentesque egestas consequat nibh, a aliquam enim 
+                                ultricies id. Nam tincidunt felis urna, vitae porttitor lacus accumsan eu. Phasellus iaculis mauris et orci interdum bibendum. Aliquam ut 
+                                leo augue. Maecenas efficitur nunc in erat viverra, sit amet malesuada odio rhoncus. Proin dignissim efficitur libero, a faucibus lacus ornare nec. 
+                                 neque iaculis ligula, at viverra quam ante et diam. Vestibulum eu euismod justo, sed molestie metus. Nulla tristique leo nec ipsum viverra eleifend.        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-12 ml-3 mt-5 book-details">
+                        <div class="book-details-content mt-3 ml-3">
+                            <div class="row ml-auto mr-auto review-stars">                          
+                                <em class="fa fa-star book-rate-star-review col-lg-1 col-md-12 col-sm-12 col-xs-12 offset-md-1 offset-sm-1 offset-xs-1"></em>
+                                <em class="fa fa-star book-rate-star-review col-lg-1 col-md-12 col-sm-12 col-xs-12 offset-md-1 offset-sm-1 offset-xs-1"></em>
+                                <em class="fa fa-star book-rate-star-review col-lg-1 col-md-12 col-sm-12 col-xs-12 offset-md-1 offset-sm-1 offset-xs-1"></em>
+                                <em class="fa fa-star book-rate-star-review col-lg-1 col-md-12 col-sm-12 col-xs-12 offset-md-1 offset-sm-1 offset-xs-1"></em>
+                                <em class="fa fa-star book-rate-star-review col-lg-1 col-md-12 col-sm-12 col-xs-12 offset-md-1 offset-sm-1 offset-xs-1"></em>
+                            </div>
+                            <div class="form-group mt-4 ml-auto mr-auto" style="width: 80%;">
+                                <textarea class="form-control review-textarea" id="exampleFormControlTextarea1" rows="4"></textarea>
+                                <div class="col-md-12 text-center"> 
+                                    <button type="submit" class="btn btn-primary mt-3 review-button">ENVIAR</button>
+                                </div>
+                                
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-12 ml-3 mt-5 book-details">
+                        <div class="book-details-content mt-3 ml-3">
+                            <div class="mt-3">
+                                <img src="userImage.jpg" alt="Imagem do usuário" class="img-profile-comment rounded-circle mr-3 mb-1 ml-3 review-photo">
+                            </div>
+                            
+                            <div class="book-details-content mt-3 ml-3" style="text-align: justify;">
+                                <h1 class="book-title">Anderson Laurentino</h1>
+                                <div class="mt-3">
+                                    <em class="fa fa-star book-rate-star-comment"></em>
+                                    <span>4.7</span><span class="review-star-span">/5</span>
+                                </div>
+                                <p class="mt-2 review-details">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu aliquet enim. Pellentesque egestas consequat nibh, a aliquam enim 
+                                    ultricies id. Nam tincidunt felis urna, vitae porttitor lacus accumsan eu. Phasellus iaculis mauris et orci interdum bibendum. Aliquam ut 
+                                    leo augue. Maecenas efficitur nunc in erat viverra, sit amet malesuada odio rhoncus. Proin dignissim efficitur libero, a faucibus lacus ornare nec. 
+                                     neque iaculis ligula, at viverra quam ante et diam. Vestibulum eu euismod justo, sed molestie metus. Nulla tristique leo nec ipsum viverra eleifend.        
+                                </p>
+                            </div>
+    
+                        </div>
+                        <br>
+                        <div class="book-details-content mt-3 ml-3">
+                            <div class="mt-3">
+                                <img src="userImage.jpg" alt="Imagem do usuário" class="img-profile-comment rounded-circle mr-3 mb-1 ml-3 review-photo">
+                            </div>
+                            
+                            <div class="book-details-content mt-3 ml-3" style="text-align: justify;">
+                                <h1 class="book-title">Anderson Laurentino</h1>
+                                <div class="mt-3">
+                                    <em class="fa fa-star book-rate-star-comment"></em>
+                                    <span>4.7</span><span class="review-star-span">/5</span>
+                                </div>
+                                <p class="mt-2 review-details">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu aliquet enim. Pellentesque egestas consequat nibh, a aliquam enim 
+                                    ultricies id. Nam tincidunt felis urna, vitae porttitor lacus accumsan eu. Phasellus iaculis mauris et orci interdum bibendum. Aliquam ut 
+                                    leo augue. Maecenas efficitur nunc in erat viverra, sit amet malesuada odio rhoncus. Proin dignissim efficitur libero, a faucibus lacus ornare nec. 
+                                     neque iaculis ligula, at viverra quam ante et diam. Vestibulum eu euismod justo, sed molestie metus. Nulla tristique leo nec ipsum viverra eleifend.        
+                                </p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+        <footer class="review-footer">
+            <div>
+                <img class="footer-logo" src="bookflix.png" alt="Logo Bookflix">
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+
+</html>

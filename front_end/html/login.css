@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto' !important;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    white;
+}
+
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(255,255,255,0.05)!important
+}
+
+.h1, h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.p-4:first-child {
+    padding-left: 0px !important;
+}
+
+#content-wrapper {
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.body-wrapper {
+    width:50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bookflix-logo {
+    width: 15%;
+    height: 100%;
+}
+
+.login-title {
+    color: white;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+hr .span-div-login { 
+    display: inline-block;
+    border-color: #FFFFFF;
+    border: 1px inset;
+    overflow: hidden;
+}
+
+.login-content {
+    background-color: #232323; 
+    color: white;
+}
+
+.login-form {
+    margin-top: 4rem;
+}
+
+.login-email-form {
+    height: 3.5rem;
+}
+
+.login-password-form-group {
+    margin-top: 3rem;
+}
+
+.login-password-input {
+    height: 3.5rem;
+}
+
+.login-forgot-password {
+    color: #0090E4;
+}
+
+.login-button {
+    background-color: #db2321; 
+    border-color: #db2321; 
+    color: white;
+}
+
+.login-enroll {
+    color: #0090E4;
+}
